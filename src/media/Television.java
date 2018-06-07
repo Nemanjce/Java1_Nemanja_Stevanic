@@ -29,12 +29,21 @@ public class Television {
     public void setTurnOn(boolean turnOn) {
         this.turnOn = turnOn;
     }
-
-//    private Television(int volume, int currentProgram, boolean turnOn) {
-//        this.volume = volume;
-//        this.currentProgram = currentProgram;
-//        this.turnOn = Boolean.TRUE;
+//    public void setTurnOff(boolean turnOn) {
+//        this.turnOn <> turnOn;
 //    }
+    public Television() {
+        this.volume = 0;
+        this.currentProgram = 1;
+        this.turnOn = false;
+
+    }
+
+    public Television(int volume, int currentProgram, boolean turnOn) {
+        this.volume = volume;
+        this.currentProgram = currentProgram;
+        this.turnOn = Boolean.TRUE;
+    }
     public void showData() {
         System.out.println("Jacina tona je : " + this.volume);
         System.out.println("TV kanal je : " + this.currentProgram);
